@@ -1,28 +1,28 @@
 ---
-- name: Machine Learning
-  sub: ML
+- name: 实习
+  sub: SX
   color: "#ffd300"
-- name: Computer Vision
-  sub: CV
+- name: 招募
+  sub: ZM
   color: "#deff0a"
-- name: Computer Graphics
-  sub: CG
+- name: 宣讲
+  sub: XJ
   color: "#0aefff"
-- name: Natural Language Proc
-  sub: NLP
+- name: 讲座
+  sub: JZ
   color: "#147df5"
-- name: Robotics
-  sub: RO
+- name: 活动
+  sub: HD
   color: "#0aff99"
-- name: Speech/SigProc
-  sub: SP
+- name: 竞赛
+  sub: JS
   color: "#580aff"
-- name: Data Mining
-  sub: DM
+- name: 通知
+  sub: TZ
   color: "#be0aff"
-- name: Automated Planning
-  sub: AP
+- name: 新闻
+  sub: XW
   color: "#a432a8"
-- name: Knowledge Representation
-  sub: KR
+- name: 未知
+  sub: WZ
   color: "#32a855"

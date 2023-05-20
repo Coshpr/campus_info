@@ -1,76 +1,40 @@
 ---
-- title: AAAI
+- title: 晶科电力 OA桌面运维实习生
   year: 2024
   id: aaai24
-  full_name: AAAI Conference on Artificial Intelligence
+  full_name: 晶科电力 OA桌面运维实习生
   link: https://aaai.org/aaai-conference/
   deadline: '2023-08-15 23:59:59'
-  abstract_deadline: '2023-08-08 23:59:59'
-  timezone: UTC-12
-  place: Vancouver, Canada
+  abstract_deadline: ''
+  timezone: UTC-0
+  place: 上海市闵行区申长路1466弄1号晶科中心
   date: February 20 - February 28, 2024
   start: 2024-02-20
   end: 2024-02-28
   hindex: 180
-  sub: ML
-  note: Mandatory abstract deadline on Aug 08, 2023, and supplementary material deadline on Aug 18, 2023. More info <a href='https://aaai.org/aaai-conference/'>here</a>.
-
-- title: LREC-COLING
-  year: 2024
-  id: lreccoling24
-  full_name: The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation
-  link: https://lrec-coling-2024.lrec-conf.org/
-  deadline: '2023-10-13 23:59:59'
-  timezone: UTC-12
-  place: Torino, Italy
-  date: May 20 - May 25, 2024
-  start: 2024-05-20
-  end: 2024-05-25
-  hindex: -1
-  sub: NLP
-  note: Workshop / Tutorial proposals are also due on October 13th, more info <a href="https://lrec-coling-2024.lrec-conf.org/1stCfP-LRECCOLING2024.html">here</a>.
-
-- title: IJCNLP-AACL
-  year: 2023
-  id: aacl23
-  link: http://www.ijcnlp-aacl2023.org/
-  deadline: '2023-05-23 23:59:00'
-  timezone: UTC-12
-  place: Bali, Indonesia
-  date: November 1-4, 2022
-  start: 2023-11-01
-  end: 2023-11-04
-  hindex: 37
-  sub: NLP
-  note: ARR commitment deadline is <b>August 15</b>, 2023. More info <a href='http://www.ijcnlp-aacl2023.org/'>here</a>.
-
-- title: RecSys
-  year: 2023
-  id: recsys23
-  link: https://recsys.acm.org/recsys23/
-  deadline: '2023-04-21 23:59:59'
-  abstract_deadline: '2023-04-14 23:59:59'
-  timezone: UTC-12
-  date: September 18 - September 22, 2023
-  place: Singapore
-  sub: DM
-  note: Mandatory abstract deadline on April 14, 2023.
+  sub: SX
+  price: 150
+  content: 9点上班，17点半下班，中午午休1小时
+  note: 一周工作3天及以上，3-6个月实习期
+  source: 2021 级计算机系群
+  update: '2023-04-18 23:59:59' 
 
 
-- title: KR
+- title: 5.25心理健康日活动工作人员招募
   year: 2023
   id: kr23
-  link: https://kr.org/KR2023/
-  deadline: '2023-03-14 23:59:59'
+  link: 
+  date: Sep 02-08, 2023
+  deadline: '2023-04-18 24:00:00'
   abstract_deadline: '2023-03-03 23:59:59'
   timezone: UTC-12
-  place: Rhodes, Greece
-  date: Sep 02-08, 2023
-  start: 2023-09-02
-  end: 2023-09-08
+  place: 计算机楼大厅
+  start: 
+  end: 
   hindex: -1
-  sub: KR
-  note: Mandatory abstract deadline on March 03, 2023. More info <a href='https://kr.org/KR2023/'>here</a>.
+  sub: ZM
+  note: <a href='https://docs.qq.com/sheet/DRnVnRHZmb09ma1dQ?tab=BB08J2'>腾讯文档</a> <a href='http://47.102.122.204:5001/login'>报名链接</a>.
+  content: 5月25日是“大学生心理健康日”，我院于5月18日、19日在计算机楼大厅开展"自尊自爱，从情绪出发"心理健康活动，现招募19日(明天)心理解“码”员10名，时间段为13:00-15:00和15:00-17:00(二选一)，主要在一楼帮忙组织心理专题活动
 
 
  
