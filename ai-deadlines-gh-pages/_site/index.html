@@ -7,11 +7,11 @@
 <title>Campus Info</title>
 <meta name="description" content="最新动态针对学院工作、求职、竞赛、通知等事务。">
 <meta name="author" content="Coshpr">
-<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684601099" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684601451" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684601099" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684601099" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684601451" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684601451" media="screen,projection">
 
 <!-- <link rel="shortcut icon" href="/static/img/favicon.png"> -->
 <link rel="shortcut icon" href="/static/img/time.svg">
@@ -261,7 +261,7 @@
                 <!-- 内容 -->
                 
                   <div class="note">
-                      9点上班，17点半下班，中午午休1小时
+                      9点上班，17点半下班，中午午休1小时, <em>150/d</em>
                   </div>
                 
 
@@ -557,8 +557,8 @@ $("#subject-select").multiselect({
         
         
           // adjust date according to deadline timezone
-          var timezone = "UTC-0" ;
-          var confDate = moment.tz("2023-05-25 23:59:59", timezone);
+          var timezone = "UTC+8" ;
+          var confDate = moment.tz("2023-05-26 00:00:00", timezone);
 
           // render countdown timer
           $('#2024bys .timer').countdown(confDate.toDate(), function (event) {
@@ -617,8 +617,8 @@ $("#subject-select").multiselect({
         
         
           // adjust date according to deadline timezone
-          var timezone = "UTC-12" ;
-          var confDate = moment.tz("2023-04-18 24:00:00", timezone);
+          var timezone = "UTC+8" ;
+          var confDate = moment.tz("2023-05-18 24:00:00", timezone);
 
           // render countdown timer
           $('#kr23 .timer').countdown(confDate.toDate(), function (event) {
