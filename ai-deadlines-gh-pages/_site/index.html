@@ -7,11 +7,11 @@
 <title>Campus Info</title>
 <meta name="description" content="最新动态针对学院工作、求职、竞赛、通知等事务。">
 <meta name="author" content="Coshpr">
-<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684594029" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684601099" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684594029" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684594029" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684601099" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684601099" media="screen,projection">
 
 <!-- <link rel="shortcut icon" href="/static/img/favicon.png"> -->
 <link rel="shortcut icon" href="/static/img/time.svg">
@@ -155,6 +155,84 @@
         </div>
         <div id="confs">
         <div id="coming_confs">
+          
+          <div id="2024bys" class="ConfItem  TZ-conf ">
+
+            <!-- 名称和倒计时 -->
+            <div class="row conf-row">
+                <div class="col-6 ">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference?id=2024bys">2024届毕业生生源信息校对工作提醒 </a>
+                  </span>
+
+                  <span class="conf-title-small">
+                    <a title="Deadline Details" href="/conference?id=2024bys">2024届毕业生生源信息校对工作提醒 '23</a>
+                  </span>
+
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+
+
+            <div class="row">
+              <!-- 消息来源，注意事项 -->
+              <div class="col-12 col-sm-6">
+                <!-- 内容 -->
+                
+                  <div class="note">
+                      2024届毕业生生源信息校对工作还有部分学院未启动，请务必通知到每位2024届预计毕业生。在2023年5月26日前完成基本信息的确认提交
+                  </div>
+                
+
+                <!-- 来源 -->
+                
+                  <div class="note">
+                      <b>Form: </b>各班群 - 2023-05-04 23:59:59
+                  </div>
+                
+
+                <!-- 注意事项 -->
+                
+                  <div class="note">
+                      <b>Note: </b><a href='https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d'> 2024届毕业生生源信息校对的通知 </a>
+                  </div>
+                
+              </div>
+
+
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>截止日期:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="meta">
+                  <!-- <span class="conf-date">February 20 - February 28, 2024.</span> -->
+                  
+                  <span class="conf-place">
+                    <a href="https://ditu.amap.com/search?query=线上操作">地址：线上操作</a>.
+                  </span>
+                  
+                  
+                </div>
+                <!-- <div class="calendar"></div> -->
+              </div>
+            </div>
+
+
+            <!-- 类别 -->
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show TZ conferences" data-sub="TZ" class="conf-sub TZ-tag"></span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
           
           <div id="aaai24" class="ConfItem  SX-conf ">
 
@@ -475,27 +553,27 @@ $("#subject-select").multiselect({
 
         
         
-        $('#aaai24 .SX-tag').html(sub2name["SX"].toLocaleLowerCase());
+        $('#2024bys .TZ-tag').html(sub2name["TZ"].toLocaleLowerCase());
         
         
           // adjust date according to deadline timezone
           var timezone = "UTC-0" ;
-          var confDate = moment.tz("2023-08-15 23:59:59", timezone);
+          var confDate = moment.tz("2023-05-25 23:59:59", timezone);
 
           // render countdown timer
-          $('#aaai24 .timer').countdown(confDate.toDate(), function (event) {
+          $('#2024bys .timer').countdown(confDate.toDate(), function (event) {
               $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
 
           // render countdown timer small
-          $('#aaai24 .timer-small').countdown(confDate.toDate(), function (event) {
+          $('#2024bys .timer-small').countdown(confDate.toDate(), function (event) {
               $(this).html(event.strftime('%Dd %H:%M:%S'));
           });
 
           // convert deadline to local timezone
           try {
             var localConfDate = moment.tz(confDate, local_timezone);
-            $('#aaai24 .deadline-time').html(localConfDate.toString());
+            $('#2024bys .deadline-time').html(localConfDate.toString());
           }
           catch(err) {
             console.log("Error converting to local timezone.");
@@ -504,26 +582,34 @@ $("#subject-select").multiselect({
           // add calendar button
           /*
           var myCalendar = createCalendarFromObject({
-            id:  'aaai24',
-            title: '晶科电力 OA桌面运维实习生 2024 deadline',
+            id:  '2024bys',
+            title: '2024届毕业生生源信息校对工作提醒 2023 deadline',
             date: confDate.toDate(),
             duration: 60,
           })
-          document.querySelector('#aaai24 .calendar').appendChild(myCalendar);
+          document.querySelector('#2024bys .calendar').appendChild(myCalendar);
           */
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           diff = today.diff(confDate);
 
-          $('#aaai24').attr("diff", diff)
+          $('#2024bys').attr("diff", diff)
           if (diff > 0) {
-            $('#aaai24').addClass('past');
-            $('#aaai24').appendTo($("#past_confs"))
-            $('#aaai24 .timer').replaceWith($('#aaai24 .deadline'));
-            $('#aaai24 .timer-small').replaceWith($('#aaai24 .deadline'));
-            $('#aaai24 .calendar').remove();
+            $('#2024bys').addClass('past');
+            $('#2024bys').appendTo($("#past_confs"))
+            $('#2024bys .timer').replaceWith($('#2024bys .deadline'));
+            $('#2024bys .timer-small').replaceWith($('#2024bys .deadline'));
+            $('#2024bys .calendar').remove();
           }
+        
+        
+        
+        $('#aaai24 .SX-tag').html(sub2name["SX"].toLocaleLowerCase());
+        
+        
+          $('#aaai24 .timer').html("TBA");
+          $('#aaai24 .deadline-time').html("TBA");
         
         
         

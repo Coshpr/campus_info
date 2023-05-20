@@ -7,11 +7,11 @@
 <title>Campus Info</title>
 <meta name="description" content="最新动态针对学院工作、求职、竞赛、通知等事务。">
 <meta name="author" content="Coshpr">
-<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684594029" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684601099" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684594029" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684594029" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684601099" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684601099" media="screen,projection">
 
 <!-- <link rel="shortcut icon" href="/static/img/favicon.png"> -->
 <link rel="shortcut icon" href="/static/img/time.svg">
@@ -247,12 +247,12 @@ function createCalendarFromObject(data) {
         }
 
         
-            if (conf == "aaai24") {
+            if (conf == "2024bys") {
 
-              $('#conf-title-href').text("晶科电力 OA桌面运维实习生 2024");
-              $('#conf-title-href').attr('href', "/conference?id=aaai24");
+              $('#conf-title-href').text("2024届毕业生生源信息校对工作提醒 2023");
+              $('#conf-title-href').attr('href', "/conference?id=2024bys");
               // set badges
-              var subs = 'SX'.split(',');
+              var subs = 'TZ'.split(',');
               for (let i = 0; i < subs.length; i++) {
                 var sub = subs[i].replace(" ", "");
                 var sub_element = document.createElement('span');
@@ -262,30 +262,28 @@ function createCalendarFromObject(data) {
               }
               // other
               $('#conf-date').text("February 20 - February 28, 2024");
-              $('#conf-place').text("上海市闵行区申长路1466弄1号晶科中心");
-              $('#conf-place').attr('href', "https://maps.google.com/?q=上海市闵行区申长路1466弄1号晶科中心")
-              $('#conf-website').text("https://aaai.org/aaai-conference/");
-              $('#conf-website').attr('href', "https://aaai.org/aaai-conference/");
+              $('#conf-place').text("线上操作");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=线上操作")
+              $('#conf-website').text("");
+              $('#conf-website').attr('href', "");
               
                 $('#conf-paperslink-div').hide();
               
               
                 $('#conf-pwclink-div').hide();
               
-              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #晶科电力 OA桌面运维实习生2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #2024届毕业生生源信息校对工作提醒2023 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
               $('#twitter-box').html(twitter_slug);
-              
-                $('#conf-full-name').text("晶科电力 OA桌面运维实习生");
               
               
                 // adjust date according to deadline timezone
                 var timezone = "UTC-0" ;
-                var confDeadline = moment.tz("2023-08-15 23:59:59", timezone);
+                var confDeadline = moment.tz("2023-05-25 23:59:59", timezone);
 
                 // add calendar 
                 var conferenceDeadlineCalendar = createCalendarFromObject({
-                  id:  'aaai24',
-                  title: '晶科电力 OA桌面运维实习生 2024 deadline',
+                  id:  '2024bys',
+                  title: '2024届毕业生生源信息校对工作提醒 2023 deadline',
                   date: confDeadline.toDate(),
                   duration: 60,
                 })
@@ -305,6 +303,43 @@ function createCalendarFromObject(data) {
                 catch(err) {
                   console.log("Error converting to local timezone.");
                 }
+              
+            }
+        
+            if (conf == "aaai24") {
+
+              $('#conf-title-href').text("晶科电力 OA桌面运维实习生 2024");
+              $('#conf-title-href').attr('href', "/conference?id=aaai24");
+              // set badges
+              var subs = 'SX'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("February 20 - February 28, 2024");
+              $('#conf-place').text("上海市闵行区申长路1466弄1号晶科中心");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=上海市闵行区申长路1466弄1号晶科中心")
+              $('#conf-website').text("");
+              $('#conf-website').attr('href', "");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #晶科电力 OA桌面运维实习生2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+                $('#conf-full-name').text("晶科电力 OA桌面运维实习生");
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
               
             }
         
