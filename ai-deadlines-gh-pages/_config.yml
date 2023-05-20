@@ -1,0 +1,16 @@
+title: CampusInfo
+description: Latest news for campus for works, activities, notices and so on
+author: Coshpr
+
+domain: "pzding.top"
+baseurl: ""
+email: "pzding@163.com"
+
+twitter_hashtag: machinelearning
+github_username: Coshpr
+github_repo: campus_info
+
+markdown: kramdown
+ga_id:
+
+include: ['_pages']
