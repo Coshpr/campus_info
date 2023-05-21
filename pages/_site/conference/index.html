@@ -7,11 +7,14 @@
 <title>Campus Info</title>
 <meta name="description" content="最新动态针对学院工作、求职、竞赛、通知等事务。">
 <meta name="author" content="Coshpr">
-<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684645414" media="screen,projection">
-
+<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684666973" media="screen,projection">
+<!--  -->
 <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684645414" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684645414" media="screen,projection">
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684666973" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684666973" media="screen,projection">
+
+
 
 <!-- <link rel="shortcut icon" href="/static/img/favicon.png"> -->
 <link rel="shortcut icon" href="/static/img/time.svg">
@@ -26,6 +29,17 @@
 <script type="text/javascript" src="/static/js/store.min.js"></script>
 <script type="text/javascript" src="/static/js/ouical.min.js"></script>
 <script type="text/javascript" src="/static/js/bootstrap-multiselect.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/js-year-calendar@2.0.0/dist/js-year-calendar.min.js"></script> -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/js-year-calendar@2.0.0/dist/js-year-calendar.min.css" rel="stylesheet"> -->
+
+<!-- <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.min.js" type="application/javascript"></script> -->
+<!-- <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-countdown/2.1.0/js/jquery.countdown.min.js" type="application/javascript"></script> -->
+<!-- <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.29.1/moment.min.js" type="application/javascript"></script> -->
+<!-- <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment-timezone/0.5.34/moment-timezone-with-data-1970-2030.min.js" type="application/javascript"></script> -->
+<!-- <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script> -->
+<!-- <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/2.11.2/cjs/popper.min.js" type="application/javascript"></script> -->
+
 
   </head>
   <body>
@@ -51,12 +65,12 @@
 
     <div class="collapse navbar-collapse" id="navbar-toggler">
       <ul class="navbar-nav mr-auto">
-        <!-- <li>
+        <li>
           <a href="/" class="nav-link" style="border-bottom: none">News</a>
-        </li> -->
-        <!-- <li>
+        </li>
+        <li>
           <a href="/calendar" class="nav-link" style="border-bottom: none;">Calendar</a>
-        </li> -->
+        </li>
       </ul>
       
       <!-- <div class="twitter-github-icons">
@@ -73,25 +87,28 @@
   </div>
 </nav>
     <div class="container">
+
+      <!-- title and fullname -->
       <div class="page-header" id="conf-title">
         <div class="row">
           <div class="col-sm-12">
-            <h1>
-              <span id="conf-title-href"></span>
-              <span id="twitter-box"></span>
-            </h1>
-            <h3 id="conf-full-name">
-            </h3>
+            <h1><span id="conf-title-href"></span></h1>
+            <h3 id="conf-full-name"> </h3>
           </div>
         </div>
+
+        <!-- tag -->
         <div class="row">
           <div class="col-sm-12">
             <span id="conf-subs" title="Conference subjects"></span>
           </div>
         </div>
       </div>
+
+
       <div id="page-content">
-        <div id="conf-key-facts" class="row">
+        <!-- keys -->
+        <div id="conf-key-facts" class="row g-1">
           <div class="col-12">
             <img src="/static/img/084-calendar.svg" class="badge-link" />
             <span id="conf-date"></span>.
@@ -100,44 +117,37 @@
             <img src="/static/img/072-location.svg" class="badge-link" />
             <a id="conf-place" target="_blank" nohref></a>.
           </div>
-          <div class="col-12">
+          <div class="col-12" id="conf-link">
             <img src="/static/img/203-earth.svg" class="badge-link" />
             <a id="conf-website" target="_blank" nohref></a>
           </div>
-          <div id="conf-paperslink-div" class="col-12">
-            <img src="/static/img/033-books.svg" class="badge-link" />
-            Accepted Papers:
-            <a id="conf-paperslink" target="_blank" nohref></a>
-          </div>
-          <div id="conf-pwclink-div" class="col-12">
-            <div class="icon-inner pwc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="s-ion-icon"><path d="M88 128h48v256H88zM232 128h48v256h-48zM160 144h48v224h-48zM304 144h48v224h-48zM376 128h48v256h-48z"></path><path d="M104 104V56H16v400h88v-48H64V104zM408 56v48h40v304h-40v48h88V56z"></path></svg></div>
-            Papers with Code:
-            <a id="conf-pwclink" target="_blank" nohref></a>
-          </div>
         </div>
+
+
         <div id="conf-deadline-info" class="row">
+          <!-- 薪资 -->
           <div class="meta deadline col-12 col-md-6">
-            Download Conference deadline:
+            
           </div>
-          <div id="conference-deadline" class="calendar meta col-sm-12 col-md-6">
-          </div>
-          <div class="meta deadline col-12 col-md-6">
-            Deadline in timezone from conference website:
-          </div>
-          <div class="meta col-sm-12 col-md-6">
-            <span class="deadline-time"></span>
-          </div>
-              <div class="meta col-sm-12 col-md-6">
-                Deadline in your local <span class="local-timezone">America/New_York</span> timezone:
-              </div>
-              <div class="local-timezone-hide meta col-sm-12 col-md-6">
-                <span class="deadline-local-time"></span>
-              </div>
-          </div>
-        <div id="conf-deadline-timer" class="row">
-          <div id="conf-timer" class="col-12">
-          </div>
+          <div id="conference-deadline" class="calendar meta col-sm-12 col-md-6"></div>
+
+          <!-- source -->
+          <div class="meta col-12 col-md-6"><span class="fw-semibold"> 消息来源:</span> </div>
+          <div class="meta col-sm-12 col-md-6"><span class="msg-source"></span></div>
+
+          <div class="meta col-sm-12 col-md-6"><span class="fw-semibold"> 截止日期:</span></div>
+          <div class="local-timezone-hide meta col-sm-12 col-md-6"> <span class="deadline-local-time"></span></div>
         </div>
+
+        <div id="conf-detail" class="row">
+          <div class="meta deadline col-24 col-md-12 col-sm-12" id="conf-detail-content"></div>
+        </div>
+
+        <!-- countdown timer -->
+        <div id="conf-deadline-timer" class="row">
+          <div id="conf-timer" class="col-12"></div>
+        </div>
+
       </div>
         <hr>
         <footer>
@@ -159,6 +169,8 @@
 </div>
 
         </footer>
+        <span class="local-timezone"></span>
+        <span class="local-time"></span>
     </div>
     <script type="text/javascript" charset="utf-8">
     $(function() {
@@ -236,7 +248,8 @@ function createCalendarFromObject(data) {
   });
 }
 
-
+          
+        
         addUtcTimeZones();
         try {
           var local_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -261,25 +274,41 @@ function createCalendarFromObject(data) {
                 $('#conf-subs').append(sub_element);
               }
               // other
-              $('#conf-date').text("February 20 - February 28, 2024");
-              $('#conf-place').text("线上操作");
-              $('#conf-place').attr('href', "https://maps.google.com/?q=线上操作")
-              $('#conf-website').text("");
-              $('#conf-website').attr('href', "");
+              $('#conf-date').text("2023-05-26之前");
+              $('#conf-place').text("Online");
+
+              // place
               
-                $('#conf-paperslink-div').hide();
+                
+                  $('#conf-place').attr('href', "https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d")
+                
               
+
+              // link
               
-                $('#conf-pwclink-div').hide();
+                $('#conf-website').text("https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d");
+                $('#conf-website').attr('href', "https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d");
               
-              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #2024届毕业生生源信息校对工作提醒2023 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
-              $('#twitter-box').html(twitter_slug);
+
+              // fullname
               
+                
+              
+
+              // source
+              
+                $('.msg-source').html("各班群");
+              
+
+              // detail
+              
+
+              // deadline
               
                 // adjust date according to deadline timezone
                 var timezone = "UTC+8" ;
-                var confDeadline = moment.tz("2023-05-26 00:00:00", timezone);
-
+                var confDeadline = moment.tz("2023-05-26 00:00:00", timezone)
+  
                 // add calendar 
                 var conferenceDeadlineCalendar = createCalendarFromObject({
                   id:  '2024bys',
@@ -293,7 +322,6 @@ function createCalendarFromObject(data) {
                 $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
                   $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
                 });
-                $('.deadline-time').html(confDeadline.toString());
 
                 // convert deadline to local timezone
                 try {
@@ -306,10 +334,10 @@ function createCalendarFromObject(data) {
               
             }
         
-            if (conf == "aaai24") {
+            if (conf == "JKDL_2023") {
 
-              $('#conf-title-href').text("晶科电力 OA桌面运维实习生 2024");
-              $('#conf-title-href').attr('href', "/conference?id=aaai24");
+              $('#conf-title-href').text("晶科电力 OA桌面运维实习生 2023");
+              $('#conf-title-href').attr('href', "/conference?id=JKDL_2023");
               // set badges
               var subs = 'SX'.split(',');
               for (let i = 0; i < subs.length; i++) {
@@ -320,22 +348,37 @@ function createCalendarFromObject(data) {
                 $('#conf-subs').append(sub_element);
               }
               // other
-              $('#conf-date').text("February 20 - February 28, 2024");
+              $('#conf-date').text("TBA");
               $('#conf-place').text("上海市闵行区申长路1466弄1号晶科中心");
-              $('#conf-place').attr('href', "https://maps.google.com/?q=上海市闵行区申长路1466弄1号晶科中心")
-              $('#conf-website').text("");
-              $('#conf-website').attr('href', "");
+
+              // place
               
-                $('#conf-paperslink-div').hide();
+                $('#conf-place').attr('href', "https://ditu.amap.com/search?query=上海市闵行区申长路1466弄1号晶科中心")
               
+
+              // link
               
-                $('#conf-pwclink-div').hide();
+                $('#conf-link').hide();
               
-              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #晶科电力 OA桌面运维实习生2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
-              $('#twitter-box').html(twitter_slug);
+
+              // fullname
               
-                $('#conf-full-name').text("晶科电力 OA桌面运维实习生");
+                
               
+
+              // source
+              
+                $('.msg-source').html("2021 级计算机系群");
+              
+
+              // detail
+              
+                var conf_detail = "实习地址:上海市闵行区申长路1466弄1号晶科中心(一周工作3天及以上,3-6个月实习期)# 【Job Description】 # 1、日常桌面系统维护、桌面基础网络支持、桌面终端的硬件维护 # 2、设备巡检、桌面初始化、桌面预装升级服务 # 3、客户端病毒查杀、升级与恢复# 4、office等常用办公软件的维护 # 5、outlook邮箱、AD域管理 # 6、视频、电话会议支持 # 【Job Requirement】# 1、 熟练掌握计算机操作系统的相关知识，熟练Office办公软件及常用软件的安装与故障解决 # 2、 2、了解AD域、防病毒软件、Outlook邮箱客户端 3、具有良好的沟通能力和团队合作精神# 【Bonus】# 1、新能源行业上市公司总部，办公环境好、人文氛围佳（人美心善的leader 有趣欢乐的team）# 2、150元/天（不含食宿）# 3、9点上班，17点半下班，中午午休1小时# 4、周边商圈丰富，衣食住行统统hold住# 5、咖啡无限量供应# 6、免费享受公司短驳车接送（淞虹路地铁站和虹桥火车站地铁站至公司大楼）# 7、可结识公司其他部门实习生小伙伴、享受实习生支持服务、可参与公司员工文体活动# 联系人：张星玲  Lucy Zhang# 人力资源部# 邮箱：xingling.zhang@jinkopower.com# 电话：021-5183 3124# 手机：15618867231#";
+                conf_detail = conf_detail.replace(/\#/g, "<br />");
+                $('#conf-detail-content').html( "<br \>"+conf_detail);
+              
+
+              // deadline
               
                 $('#conf-timer').html("TBA");
                 $('.deadline-time').html("TBA");
@@ -359,23 +402,32 @@ function createCalendarFromObject(data) {
               // other
               $('#conf-date').text("Sep 02-08, 2023");
               $('#conf-place').text("计算机楼大厅");
-              $('#conf-place').attr('href', "https://maps.google.com/?q=计算机楼大厅")
-              $('#conf-website').text("");
-              $('#conf-website').attr('href', "");
+
+              // place
               
-                $('#conf-paperslink-div').hide();
+                $('#conf-place').attr('href', "https://ditu.amap.com/search?query=计算机楼大厅")
               
+
+              // link
               
-                $('#conf-pwclink-div').hide();
+                $('#conf-link').hide();
               
-              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #5.25心理健康日活动工作人员招募2023 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
-              $('#twitter-box').html(twitter_slug);
+
+              // fullname
               
+
+              // source
+              
+
+              // detail
+              
+
+              // deadline
               
                 // adjust date according to deadline timezone
                 var timezone = "UTC+8" ;
-                var confDeadline = moment.tz("2023-05-18 24:00:00", timezone);
-
+                var confDeadline = moment.tz("2023-05-18 24:00:00", timezone)
+  
                 // add calendar 
                 var conferenceDeadlineCalendar = createCalendarFromObject({
                   id:  'kr23',
@@ -389,7 +441,6 @@ function createCalendarFromObject(data) {
                 $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
                   $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
                 });
-                $('.deadline-time').html(confDeadline.toString());
 
                 // convert deadline to local timezone
                 try {

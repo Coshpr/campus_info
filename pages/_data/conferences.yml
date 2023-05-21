@@ -2,31 +2,34 @@
 - title: 2024届毕业生生源信息校对工作提醒
   year: 2023
   id: 2024bys
-  full_name:
-  link:
+  full_name: 2024届毕业生生源信息校对工作提醒
+
+  link: https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d
   deadline: "2023-05-26 00:00:00"
-  abstract_deadline: ""
+  date:  '2023-05-26之前'
+  start: 
+  end: 
   timezone: UTC+8
-  place: 线上操作
-  date: February 20 - February 28, 2024
-  start: 2024-02-20
-  end: 2024-02-28
+
+  abstract_deadline: ""
+  place: Online
   sub: TZ
-  content: 2024届毕业生生源信息校对工作还有部分学院未启动，请务必通知到每位2024届预计毕业生。在2023年5月26日前完成基本信息的确认提交
-  note: <a href='https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d'> 2024届毕业生生源信息校对的通知 </a>
   source: 各班群
   update: "2023-05-04 23:59:59"
+  content: 2024届毕业生生源信息校对工作还有部分学院未启动，请务必通知到每位2024届预计毕业生。在2023年5月26日前完成基本信息的确认提交
+  note: <a href='https://zbb.shu.edu.cn/InformationDetail.aspx?InfoID=d0b88f67-5c02-401e-83b7-b4752680358d'> 2024届毕业生生源信息校对的通知 </a>
+
 
 - title: 晶科电力 OA桌面运维实习生
-  year: 2024
-  id: aaai24
+  year: 2023
+  id: JKDL_2023
   full_name: 晶科电力 OA桌面运维实习生
   link:
   deadline: "TBA"
   abstract_deadline: ""
   timezone: UTC+8
   place: 上海市闵行区申长路1466弄1号晶科中心
-  date: February 20 - February 28, 2024
+  date: TBA
   start: 2024-02-20
   end: 2024-02-28
   hindex: 180
@@ -36,6 +39,31 @@
   note: 一周工作3天及以上，3-6个月实习期
   source: 2021 级计算机系群
   update: "2023-04-18 23:59:59"
+  detail: >-
+    实习地址:上海市闵行区申长路1466弄1号晶科中心(一周工作3天及以上,3-6个月实习期)#
+    【Job Description】 #
+    1、日常桌面系统维护、桌面基础网络支持、桌面终端的硬件维护 #
+    2、设备巡检、桌面初始化、桌面预装升级服务 #
+    3、客户端病毒查杀、升级与恢复#
+    4、office等常用办公软件的维护 #
+    5、outlook邮箱、AD域管理 #
+    6、视频、电话会议支持 #
+    【Job Requirement】#
+    1、 熟练掌握计算机操作系统的相关知识，熟练Office办公软件及常用软件的安装与故障解决 #
+    2、 2、了解AD域、防病毒软件、Outlook邮箱客户端 3、具有良好的沟通能力和团队合作精神#
+    【Bonus】#
+    1、新能源行业上市公司总部，办公环境好、人文氛围佳（人美心善的leader 有趣欢乐的team）#
+    2、150元/天（不含食宿）#
+    3、9点上班，17点半下班，中午午休1小时#
+    4、周边商圈丰富，衣食住行统统hold住#
+    5、咖啡无限量供应#
+    6、免费享受公司短驳车接送（淞虹路地铁站和虹桥火车站地铁站至公司大楼）#
+    7、可结识公司其他部门实习生小伙伴、享受实习生支持服务、可参与公司员工文体活动#
+    联系人：张星玲  Lucy Zhang#
+    人力资源部#
+    邮箱：xingling.zhang@jinkopower.com#
+    电话：021-5183 3124#
+    手机：15618867231#
 
 - title: 5.25心理健康日活动工作人员招募
   year: 2023
