@@ -6,3 +6,6 @@ gem install jekyll bundler
 bundle install
 bundle exec jekyll serve
 
+netstat -apn  |  grep 4000
+
+
