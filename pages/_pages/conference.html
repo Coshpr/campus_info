@@ -142,15 +142,22 @@ permalink:  /conference/
 
               // source
               {% if conf.source %}
-                $('.msg-source').html("{{conf.source}}");
+                $('.msg-source').html("{{conf.source}}" +"(" + "{{conf.update}}"+")");
               {% endif %}
 
               // detail
+              var conf_content =  "{{conf.content}}".replace(/\#/g, "<br />").replace(/\"/g, "'");
               {% if conf.detail %}
                 var conf_detail = "{{conf.detail}}";
                 conf_detail = conf_detail.replace(/\#/g, "<br />");
-                $('#conf-detail-content').html( "<br \>"+conf_detail);
+                $('#conf-detail-content').html( "<br \>"+ conf_content+ "<br \><br \>"+conf_detail);
+              
+              {% else %}
+                $('#conf-detail-content').html( "<br \>"+ conf_content+ "<br \><br \>");
+
               {% endif %}
+
+
 
               // deadline
               {% if conf.deadline == "TBA" %}

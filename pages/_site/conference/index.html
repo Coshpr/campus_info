@@ -7,12 +7,12 @@
 <title>Campus Info</title>
 <meta name="description" content="最新动态针对学院工作、求职、竞赛、通知等事务。">
 <meta name="author" content="Coshpr">
-<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684667041" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/js-year-calendar.min.css?t=1684671625" media="screen,projection">
 <!--  -->
 <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684667041" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684667041" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/deadlines.css?t=1684671625" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/static/css/calendar.css?t=1684671625" media="screen,projection">
 
 
 
@@ -155,17 +155,18 @@
   <div class="col-12 col-sm-12">
     <a href="/">pzding.top</a>
     was built and maintained from 2023 by
-    <a href="https://twitter.com/abhshkdz">Coshpr</a>. Thanks for <a href="http://jekyllcn.com/">jekyllcn</a> and 
-    <a href="https://aideadlin.es/?sub=ML,CV,CG,NLP,RO,SP,DM">aideadlin</a>
+    <a href="https://twitter.com/abhshkdz">Coshpr</a>. Thanks for <a href="http://jekyllcn.com/">jekyllcn</a>
 
   </div>
 </div>
 <div class="row">
   <div class="col-12 col-sm-12">
     <div class="footer-links">
-    Any questions, please contact <a href="mailto:pzding@163.com">pzding@163.com</a>.
+    Any questions, please contact <a href="mailto:pzding@163.com">pzding@163.com</a> <embed src="/static/img/coffe.svg" type="image/svg+xml" />  <a href="/buyacoffe" >Buy 
+      a Coffe</a>.
   </div>
   </div>
+  
 </div>
 
         </footer>
@@ -297,11 +298,17 @@ function createCalendarFromObject(data) {
 
               // source
               
-                $('.msg-source').html("各班群");
+                $('.msg-source').html("各班群" +"(" + "2023-05-04 23:59:59"+")");
               
 
               // detail
+              var conf_content =  "2024届毕业生生源信息校对工作还有部分学院未启动，请务必通知到每位2024届预计毕业生。在2023年5月26日前完成基本信息的确认提交".replace(/\#/g, "<br />").replace(/\"/g, "'");
               
+                $('#conf-detail-content').html( "<br \>"+ conf_content+ "<br \><br \>");
+
+              
+
+
 
               // deadline
               
@@ -368,15 +375,19 @@ function createCalendarFromObject(data) {
 
               // source
               
-                $('.msg-source').html("2021 级计算机系群");
+                $('.msg-source').html("2021 级计算机系群" +"(" + "2023-05-18 23:59:59"+")");
               
 
               // detail
+              var conf_content =  "9点上班，17点半下班，中午午休1小时, <em>150/d</em>".replace(/\#/g, "<br />").replace(/\"/g, "'");
               
                 var conf_detail = "实习地址:上海市闵行区申长路1466弄1号晶科中心(一周工作3天及以上,3-6个月实习期)# 【Job Description】 # 1、日常桌面系统维护、桌面基础网络支持、桌面终端的硬件维护 # 2、设备巡检、桌面初始化、桌面预装升级服务 # 3、客户端病毒查杀、升级与恢复# 4、office等常用办公软件的维护 # 5、outlook邮箱、AD域管理 # 6、视频、电话会议支持 # 【Job Requirement】# 1、 熟练掌握计算机操作系统的相关知识，熟练Office办公软件及常用软件的安装与故障解决 # 2、 2、了解AD域、防病毒软件、Outlook邮箱客户端 3、具有良好的沟通能力和团队合作精神# 【Bonus】# 1、新能源行业上市公司总部，办公环境好、人文氛围佳（人美心善的leader 有趣欢乐的team）# 2、150元/天（不含食宿）# 3、9点上班，17点半下班，中午午休1小时# 4、周边商圈丰富，衣食住行统统hold住# 5、咖啡无限量供应# 6、免费享受公司短驳车接送（淞虹路地铁站和虹桥火车站地铁站至公司大楼）# 7、可结识公司其他部门实习生小伙伴、享受实习生支持服务、可参与公司员工文体活动# 联系人：张星玲  Lucy Zhang# 人力资源部# 邮箱：xingling.zhang@jinkopower.com# 电话：021-5183 3124# 手机：15618867231#";
                 conf_detail = conf_detail.replace(/\#/g, "<br />");
-                $('#conf-detail-content').html( "<br \>"+conf_detail);
+                $('#conf-detail-content').html( "<br \>"+ conf_content+ "<br \><br \>"+conf_detail);
               
+              
+
+
 
               // deadline
               
@@ -420,7 +431,13 @@ function createCalendarFromObject(data) {
               
 
               // detail
+              var conf_content =  "5月25日是“大学生心理健康日”，我院于5月18日、19日在计算机楼大厅开展“自尊自爱，从情绪出发”心理健康活动，现招募19日(明天)心理解“码”员10名，时间段为13:00-15:00和15:00-17:00(二选一)，主要在一楼帮忙组织心理专题活动".replace(/\#/g, "<br />").replace(/\"/g, "'");
               
+                $('#conf-detail-content').html( "<br \>"+ conf_content+ "<br \><br \>");
+
+              
+
+
 
               // deadline
               
